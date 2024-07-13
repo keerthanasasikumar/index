@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <!-- SignUp -->
+     <div class="container">
+        <div class="sing-up">
+            <div class="button">
+                <div id="btn">
+                    <button type="button" class="button-page"onclick="signup()">SignUp</button>
+                    <button type="button" class="button-page"onclick="login()">Login</button>
+                </div>
+                <form id="signup" class="input">
+                    <input type="text" class="input-field" placeholder="UserName">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <input type="email" class="input-field" placeholder="E-Mail">
+                    <input type="tel" class="input-field" placeholder="Mobile Number" oninput="this.value=this.value.replace(/[^0-9]/g,' ')">
+                    <button type="submit" class="submit">SignUp</button>
+                </form>
+                <form id="login" class="input">
+                    <input type="text" class="input-field" placeholder="E-Mail">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <button type="submit" class="submit">Login</button>
+                </form>
+            </div>
+        </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
